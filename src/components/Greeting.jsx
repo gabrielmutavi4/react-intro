@@ -4,7 +4,7 @@
 function Greeting({ name }) {
   return (
     <div className="card">
-      <h2>Hello, {name} 👋</h2>
+      <h2 style={{color:"grey"}}>Hello, {name} 👋</h2>
       <p>Welcome to your React journey</p>
     </div>
   );
