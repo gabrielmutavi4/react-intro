@@ -1,19 +1,18 @@
 // App.jsx
-
-import "./App.css";
-import Greeting from "./components/Greeting";
-import Counter from "./components/Counter";
+import profile from './profile.jsx'
 
 // Root component that combines everything
 function App() {
+  const name = "Gabriel Mutavi" 
+  const role = "Developer"
   return (
-    <div className="app-container">
-      {/* Props example */}
-      <Greeting name="Eugene" />
-
-      {/* State example */}
-      <Counter />
+    <>
+    <div>
+      <profile>{name}</profile>
+      <p>{role}</p>
     </div>
+    <profile/>
+    </>
   );
 }
 
