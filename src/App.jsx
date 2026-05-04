@@ -1,17 +1,19 @@
 // App.jsx
-import profile from './profile.jsx'
+import "./App.css";
+import Counter from "./components/Counter";
+import Greeting from "./components/Greeting";
+import Profile from "./components/Profile";
 
 // Root component that combines everything
 function App() {
-  const name = "Gabriel Mutavi" 
-  const role = "Developer"
   return (
     <>
     <div>
-      <profile>{name}</profile>
-      <p>{role}</p>
+      <profile name = "Gabriel mutavi" Role = "Developer"/>
     </div>
     <profile/>
+    <Counter/>
+    <Greeting/>
     </>
   );
 }
